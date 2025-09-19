@@ -102,6 +102,8 @@ void createtree(bitree *t)
     }
 }
 
+// 非递归遍历就是自己写一个栈自己进栈出栈即可
+
 // 前序遍历 递归思路
 void preorder(bitree t) // t存的是二叉树的根
 {
@@ -179,5 +181,16 @@ int main()
     postorder(t);
     printf("\n");
 }
+
+/*
+
+a.前序遍历 b.中序遍历 c.后序遍历
+
+已知a,b或b,c都可以唯一确定一棵二叉树
+已知a,c不能确定一棵二叉树
+
+
+
+*/
 
 
