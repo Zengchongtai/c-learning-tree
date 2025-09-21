@@ -85,6 +85,12 @@ void createtree(bitree *t)
 {
     elementType ch; // 创建了一个char类型的变量
     ch = str[idx++]; // 读取str[]中的字符
+
+    // 如果已经到达字符串末尾，则设置为NULL并返回
+    if (str[idx] == '\0') {
+        *t = NULL;
+        return;
+    }
     if (ch == '#')
     {
         *t = NULL; // 此时*t对应的是某个结点的子节点(left或right)
